@@ -16,7 +16,7 @@ const useCountDownTimer = (seconds: number) => {
         }
     }, [setTimeLeft, hasTimerEnded, isTimerRunning]);
 
-    const conutdownReset = React.useCallback(() => {
+    const countdownReset = React.useCallback(() => {
         clearInterval(intervalRef.current!);
         intervalRef.current = null;
         setTimeLeft(seconds);
@@ -34,7 +34,7 @@ const useCountDownTimer = (seconds: number) => {
     }, []);
 
 
-    return { timeLeft, countdownStart, conutdownReset }
+    return { timeLeft, countdownStart, countdownReset }
 }
 
 export default useCountDownTimer

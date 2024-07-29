@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@layer base {
+    body {
+        @apply grid min-h-screen px-4 font-mono tracking-wider bg-slate-800 text-slate-50 place-items-center;
+    }
+}
