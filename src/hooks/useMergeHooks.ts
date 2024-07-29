@@ -68,7 +68,7 @@ const useMergeHooks = () => {
         }
     }, [clearTyped, areWordsFinished, updatedWords, sumErrors]);
 
-    return { state, words, typed, errors, restart, timeLeft, totalTyped };
+    return { state, words, typed, errors, restart, timeLeft, totalTyped, cursor };
 };
 
 export default useMergeHooks;

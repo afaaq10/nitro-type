@@ -8,23 +8,23 @@ import useMergeHook from "./hooks/useMergeHooks";
 import { calculateAccuracyPercentage } from "./utils/helper";
 
 const App = () => {
-    const { words, typed, timeLeft, errors, state, restart, totalTyped } =
+    const { words, typed, timeLeft, errors, state, restart, totalTyped, cursor } =
         useMergeHook();
 
     return (
         <div>
-            <div className="flex justify-center gap-4 font-mono text-5xl font-bold text-red-300">
-                <h1 className="mb-28">Nitro Type</h1>
+            <div className="flex justify-center gap-4 mt-20 mb-24 text-5xl font-medium text-red-300">
+                <h1>Nitro Type</h1>
                 <FaKeyboard size={54} />
             </div>
             <CountdownTimer timeLeft={timeLeft} />
             <WordsContainer>
                 <GeneratedWords key={words} words={words} />
-                {/* User typed characters will be overlayed over the generated words */}
                 <UserTypings
                     className="absolute inset-0"
                     words={words}
                     userInput={typed}
+                    cursor={cursor}
                 />
             </WordsContainer>
             <RestartButton
@@ -54,7 +54,7 @@ const WordsContainer = ({ children }: { children: React.ReactNode }) => {
 };
 
 const CountdownTimer = ({ timeLeft }: { timeLeft: number }) => {
-    return <h2 className="font-medium text-primary-400">Time: {timeLeft}</h2>;
+    return <h2 className="text-3xl font-medium text-primary-400">Time: <span className="text-3xl text-yellow-600">{timeLeft}</span></h2>;
 };
 
 export default App;
