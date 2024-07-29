@@ -45,7 +45,7 @@ To run the project locally:
 npm start
 ```
 ## Contributing
-If you would like to contribute to Nitrio-Type, please fork the repository and create a pull request with your changes. Contributions are welcome!
+If you would like to contribute to Nitro-Type, please fork the repository and create a pull request with your changes. Contributions are welcome!
 
 ### License
 This project is licensed under the MIT License.
