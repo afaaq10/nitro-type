@@ -1,30 +1,57 @@
-# React + TypeScript + Vite
+# Nitro-Type
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Nitro-Type is a typing speed test application built with React. It allows users to test their typing speed. The project utilizes Framer Motion for animations and React Icons for iconography.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Typing speed test
+- Animated UI elements with Framer Motion
+- Icons from React Icons
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Technologies Used
+- React
+- Framer Motion
+- React Icons
 
-- Configure the top-level `parserOptions` property like this:
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json', './tsconfig.app.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+## Installation
+
+To get started with Nitro-Type, follow these steps:
+
+1. **Clone the repository**:
+
+    ```sh
+    git clone https://github.com/afaaq10/nitrio-type.git
+    ```
+
+2. **Navigate to the project directory**:
+
+    ```sh
+    cd nitrio-type
+    ```
+
+3. **Install the dependencies**:
+
+    ```sh
+    npm install
+    ```
+
+## Running the Project
+
+To run the project locally:
+
+```sh
+npm start
 ```
+## Contributing
+If you would like to contribute to Nitrio-Type, please fork the repository and create a pull request with your changes. Contributions are welcome!
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+### License
+This project is licensed under the MIT License.
+
+### Contact
+For any questions or suggestions, feel free to open an issue or contact me at afaaqmajeed123@gmail.com.
+
+### Thank you for using Nitro-Type! Happy typing!
+
