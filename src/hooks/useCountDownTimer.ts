@@ -3,14 +3,14 @@ import React from 'react'
 const useCountDownTimer = (seconds: number) => {
 
     const [timeLeft, setTimeLeft] = React.useState(seconds);
-    const intervalRef = React.useRef<NodeJS.Timer | null>(null);
+    const intervalRef = React.useRef<number | null>(null);
 
     const hasTimerEnded = timeLeft <= 0;
     const isTimerRunning = intervalRef.current != null;
 
     const countdownStart = React.useCallback(() => {
         if (!hasTimerEnded && !isTimerRunning) {
-            intervalRef.current = setInterval(() => {
+            intervalRef.current = window.setInterval(() => {
                 setTimeLeft((prevTimeLeft) => prevTimeLeft - 1)
             }, 1000)
         }
