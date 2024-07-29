@@ -2,6 +2,9 @@
 
 Nitro-Type is a typing speed test application built with React. It allows users to test their typing speed. The project utilizes Framer Motion for animations and React Icons for iconography.
 
+## Demo
+https://ams-nitro-type.netlify.app
+
 ## Features
 
 - Typing speed test
